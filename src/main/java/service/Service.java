@@ -5,15 +5,15 @@ import entity.Person;
 import java.util.Scanner;
 
 public class Service {
-    public void createPerson(){
-        Scanner in = new Scanner(System.in);
-        Person person = new Person();
+    Scanner in = new Scanner(System.in);
+    Person person = new Person();
+
+    public void createPerson() {
         person.setName(in.nextLine());
         person.setAge(in.nextInt());
-        person.setPhoneNumber(in.nextInt());
-        System.out.println(person.getName());
-        System.out.println(person.getAge());
-        System.out.println(person.getPhoneNumber());
     }
 
+    public void getPerson() {
+        System.out.println(person.getPerson());
+    }
 }
