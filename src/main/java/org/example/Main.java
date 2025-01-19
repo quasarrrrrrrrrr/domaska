@@ -14,13 +14,15 @@ public class Main {
         person.setAlive(false);
         System.out.println(person.getPerson());
 
-
+        Service service = new Service();
+        service.c(person);
+        service.c1(person.getAlive());
         int i = 0;
         while (i != 11) {
             System.out.println(i);
             i++;
         }
-        for (int o = 0; o < 10; o++){
+        for (int o = 0; o < 10; o++) {
             System.out.println(o);
         }
     }
